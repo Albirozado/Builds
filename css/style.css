@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #0A100D;
+    border-radius: 5rem;
+}
+header{
+    background: url(/imagem/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    position: relative;
+
+
+
+
+
+
+}
+
+body{
+    font-family: "centuryprincipal";
+}
+.navbar{
+    position: fixed;
+    background-color: #f8f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4%;
+    z-index: 2000;
+
+
+}
+.ancoras a{
+    position: relative;
+    color: #0A100D;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: calc(1.1em + .2vh);
+
+}
+
+
+.ancoras a::before{
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    position: absolute;
+    background-color: #F48937;
+    left: 0;
+    bottom: -0.4rem;
+    border-radius: 5rem;
+}
+.ancoras a:hover::before{
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+
+.ancoras .home{
+    color: #F48937;
+}
+
+@font-face {
+    font-family: "centuryprincipal";
+    src: url(/century-gothic/Century\ Gothic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "centurylogo";
+    src: url(/century-gothic/GOTHICB.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "century";
+    src: url(/century-gothic/GOTHICB0.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "candara";
+    src: url(/Candara-Font/Candara\ Font.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar .logo span{
+    text-transform: uppercase;
+    color: #F48937;
+}
+.navbar .logo{
+    font-family: "centurylogo";
+    font-size: calc(1.1em + 3vh);
+} 
+header .introducao{
+    font-family: "candara";
+    position: absolute;
+    top: 40%;
+    border: 40%;
+    transform: translateY(-40);
+    margin: 0 7%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.2rem;
+
+
+
+
+}
+header .introducao p{
+    line-height: 3.5rem;
+}
+header .introducao .casa{
+    color: #F48937;
+}
+header .introducao .menusculo{
+    text-transform: uppercase;
+}
+
+
+
+
+.primairo_container{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    font-family: "century";
+}
+.primeiro{
+    width: 100%;
+    height: 100%;
+    background-color: #0A100D;
+    border-left: 250px solid #ffed65;
+    border-bottom: 150px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.segundo{
+    border-right: 250px solid /*#ecf0f3*/ #ffed65;
+    border-top: 150px solid transparent;
+
+
+
+
+}
+
+.primairo_container .fa-solid{
+    color: #ffed65;
+    margin: 0.5rem 0;
+
+}
+.primeiro .box{
+    color: #FFFBFF;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+    font-size: 1.5rem;
+    
+
+
+}
+.segundo{
+    height: 100%;
+    background-color: #0A100D;
+
+}
+.menur{
+    display: none;
+}
+.umasection .close{
+    display: none;
+}
+
+/*__________________________________________________*/
+@media(max-width: 1111px){
+    .primeiro{
+        border-left: 130px solid #ffed65;
+    }
+    .segundo{
+        border-right: 130px solid /*#ecf0f3*/ #ffed65;
+    }
+}
+@media(max-width: 832px){
+    .primeiro{
+        border-left: none;
+        border-bottom: none;
+    }
+    .segundo{
+        border-right: none;
+        border-top: none;
+    }
+    .primairo_container{
+        height: auto;
+
+    }
+    .primeiro .box{
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+        
+    
+    
+    }
+    .umasection{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        justify-content: end;
+
+    }
+    .umasection.active{
+        right: 0;
+    }
+    .umasection .close{
+        display: block;
+        font-size: calc(1.1em + 3vh);
+        background-color: #f8f6f8;
+        padding: calc(0.2rem + 1.5vh);
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        margin-right: 0.5rem;
+    }
+    .ancoras{
+        background-color: #f8f6f8;
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    }
+    .ancoras a{
+        display: block;
+        padding: 0.8rem 1.5rem;
+        margin: 0.5rem 0;
+
+
+    }
+    .ancoras a:hover::before{
+        width: 0;
+    }
+    .menur{
+        display: block;
+    }
+    .menur .menu{
+        font-size: calc(1.1em + 3vh);
+        padding: 0.5rem;
+    }
+
+    
+}
+@media(max-width: 540px){
+    .primeiro{
+        display: block;
+        text-align: center;
+    }
+    header .introducao{
+        font-size: 1.5rem;
+    
+    
+    
+    
+    }
+    header .introducao p{
+        line-height: 2.2rem;
+    }
+
+}
+
