@@ -14,3 +14,7 @@ onscroll = () =>{
     menu.classList.remove("active")
 
 }
+function loder(){
+    document.querySelector(".preloader").style.display = "none"
+    document.querySelector(".tudo").style.display = "block"
+}
