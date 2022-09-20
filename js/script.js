@@ -7,9 +7,8 @@ document.querySelector(".menu").onclick = () =>{
 }
 document.querySelector(".close").onclick = () =>{
     menu.classList.remove("active")
-
-
 }
+
 onscroll = () =>{
     menu.classList.remove("active")
 
