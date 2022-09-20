@@ -249,6 +249,7 @@ header .introducao .menusculo{
     }
     .umasection.active{
         right: 0;
+        float: right;
     }
     .umasection .close{
         display: block;
