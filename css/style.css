@@ -55,13 +55,14 @@ body{
   }
 .navbar{
     position: fixed;
-    background-color: #f8f6f8;
+    background-color: #eeeff1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 0 4%;
     z-index: 2000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
 
 }
