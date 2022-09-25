@@ -47,6 +47,7 @@ body{
     animation-duration: 15s;  
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    display: block;
   }
   
   @keyframes example {
