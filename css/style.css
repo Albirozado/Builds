@@ -35,25 +35,8 @@ header{
 body{
     font-family: "centuryprincipal";
 }
-.tudo{
-    display: none;
-}
-.preloader {
-    width: 100%;
-    height: 10px;
-    background: #F48937;
-    position: relative;
-    animation-name: example;
-    animation-duration: 15s;  
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    display: block;
-  }
-  
-  @keyframes example {
-    from {width: 1%;}
-    to {width: 100%; background-color: #ffed65;}
-  }
+
+
 .navbar{
     position: fixed;
     background-color: #eeeff1;
@@ -129,7 +112,8 @@ body{
 }
 .navbar .logo{
     font-family: "centurylogo";
-    font-size: calc(1.1em + 3vh);
+    font-size: 2rem;
+    padding: .3rem;
 } 
 header .introducao{
     font-family: "candara";
@@ -252,9 +236,9 @@ header .introducao .menusculo{
     }
     .umasection .close{
         display: block;
-        font-size: calc(1.1em + 3vh);
+        font-size: 2rem;
         background-color: #f8f6f8;
-        padding: calc(0.2rem + 1.5vh);
+        padding: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         margin-right: 0.5rem;
     }
@@ -278,7 +262,7 @@ header .introducao .menusculo{
         display: block;
     }
     .menur .menu{
-        font-size: calc(1.1em + 3vh);
+        font-size: 2rem;
         padding: 0.5rem;
     }
 
